@@ -1,7 +1,4 @@
 # klword
-
-# klword
-
 [![PyPI](https://img.shields.io/pypi/v/klword)](https://pypi.org/project/klword/)
 [![Python](https://img.shields.io/pypi/pyversions/klword)](https://pypi.org/project/klword/)
 [![License](https://img.shields.io/github/license/poggiotzx/klword)](LICENSE)
