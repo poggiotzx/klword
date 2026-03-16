@@ -1,0 +1,6 @@
+include README.md
+include LICENSE
+recursive-include src/klword/templates *
+recursive-include examples *.py
+recursive-include tests *.py
+recursive-include tests/assets *
