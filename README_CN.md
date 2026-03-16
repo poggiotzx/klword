@@ -1,6 +1,6 @@
 # klword
 
-English | [简体中文](README_CN.md)
+[English](README.md) | 简体中文
 
 [![PyPI](https://img.shields.io/pypi/v/klword)](https://pypi.org/project/klword/)
 [![Python](https://img.shields.io/pypi/pyversions/klword)](https://pypi.org/project/klword/)
@@ -8,30 +8,28 @@ English | [简体中文](README_CN.md)
 [![CI](https://github.com/poggiotzx/klword/actions/workflows/ci.yml/badge.svg)](https://github.com/poggiotzx/klword/actions/workflows/ci.yml)
 [![Publish](https://github.com/poggiotzx/klword/actions/workflows/publish.yml/badge.svg)](https://github.com/poggiotzx/klword/actions/workflows/publish.yml)
 
-`klword` is a lightweight Word report generation library built on top of `python-docx`.
+`klword` 是一个基于 `python-docx` 的轻量级 Word 报告生成库。
 
-It provides a small, structured API for generating `.docx` reports from templates and
-containerized content blocks. It is suitable for automated test reports, simulation reports,
-and other document-generation workflows.
+它提供了一套小而清晰的 API，用于基于模板和结构化内容块生成 `.docx` 文档，适用于自动化测试报告、仿真报告以及其他文档生成场景。
 
-## Features
+## 功能特点
 
-- Template-based Word report generation
-- Structured content container API
-- Text, image, and table insertion
-- Rich text style helpers
-- Automatic figure and table caption numbering
-- PyPI-ready packaging and CI/CD workflows
+- 基于模板的 Word 报告生成
+- 结构化内容容器 API
+- 支持文本、图片、表格插入
+- 富文本样式辅助工具
+- 支持图表标题自动编号
+- 适合发布到 PyPI 的完整工程化配置
 
-## Installation
+## 安装
 
-Install from PyPI:
+从 PyPI 安装：
 
 ```bash
 pip install klword
 ```
 
-Or install from source:
+或从源码安装：
 
 ```bash
 git clone https://github.com/poggiotzx/klword.git
@@ -39,16 +37,16 @@ cd klword
 pip install -e .
 ```
 
-## Quick Start
+## 快速示例
 
 ```python
 from klword import WordAPI
-from klword import BODY_STYLE, make_rich_text
+from klword.word_styles import BODY_STYLE, make_rich_text
 
 api = WordAPI("templates/test.docx")
 
 text = make_rich_text(
-    "This text is inserted into the template.",
+    "这是一段插入到模板中的文字。",
     BODY_STYLE,
 )
 
@@ -63,8 +61,8 @@ table_container = api.new_container()
 table_container.add_table_by_config(
     {
         "data": [
-            ["Name", "Value"],
-            ["Example", "123"],
+            ["名称", "数值"],
+            ["示例", "123"],
         ]
     }
 )
@@ -79,7 +77,7 @@ api.render(
 )
 ```
 
-## Project Structure
+## 项目结构
 
 ```text
 klword
@@ -104,16 +102,16 @@ klword
 └── pyproject.toml
 ```
 
-## Release Automation
+## 发布自动化
 
-This repository is prepared for a professional Python package workflow:
+当前仓库已经按照较完整的 Python 开源库流程整理：
 
-- **CI** runs lint and tests on push and pull request.
-- **Semantic Release** updates the version, changelog, tag, and GitHub Release.
-- **Trusted Publishing** publishes to PyPI from GitHub Actions without a PyPI API token.
-- **Build artifacts** include both source distribution and wheel.
+- **CI**：在 push 和 pull request 时自动执行 lint 与测试。
+- **Semantic Release**：自动更新版本号、CHANGELOG、Tag 和 GitHub Release。
+- **Trusted Publishing**：通过 GitHub Actions 向 PyPI 发布，无需手动维护 PyPI Token。
+- **构建产物**：同时生成 sdist 和 wheel。
 
-## Development
+## 本地开发
 
 ```bash
 pip install -e .[dev]
@@ -121,6 +119,6 @@ pytest
 ruff check .
 ```
 
-## License
+## 许可证
 
-MIT License. See [LICENSE](LICENSE).
+MIT License，详见 [LICENSE](LICENSE)。

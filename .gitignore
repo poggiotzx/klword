@@ -1,8 +1,29 @@
-.venv/
+# Python
 __pycache__/
-*.pyc
-output/
-dist/
-build/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
 *.egg-info/
+.eggs/
 .pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Build
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

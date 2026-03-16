@@ -10,8 +10,8 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from klword import WordAPI
-from klword.word_styles import (
+from src.klword.word_api import WordAPI
+from src.klword.word_styles import (
     BODY_STYLE,
     CAPTION_STYLE,
     MAIN_STYLE,

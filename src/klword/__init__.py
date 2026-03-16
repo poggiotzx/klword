@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""klword 对外导出。"""
+"""Public exports for klword."""
 
 from .word_api import DocContainer, WordAPI
 from .word_styles import (
@@ -9,12 +9,13 @@ from .word_styles import (
     TABLE_BODY_STYLE,
     TABLE_HEADER_STYLE,
     CellStyle,
-    RichTextValue,
     TableStyle,
     TextStyle,
     make_rich_text,
     make_table_style,
 )
+
+__version__ = "0.1.0"
 
 __all__ = [
     "WordAPI",
@@ -22,7 +23,6 @@ __all__ = [
     "TextStyle",
     "CellStyle",
     "TableStyle",
-    "RichTextValue",
     "BODY_STYLE",
     "CAPTION_STYLE",
     "MAIN_STYLE",
@@ -30,4 +30,5 @@ __all__ = [
     "TABLE_HEADER_STYLE",
     "make_rich_text",
     "make_table_style",
+    "__version__",
 ]
