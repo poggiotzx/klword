@@ -111,7 +111,6 @@ def main() -> None:
 
     print(f"生成完成：{output_path}")
     print("提示：如果页码或编号未刷新，请在 Word 中 Ctrl+A 后按 F9 更新域。")
-    print("注意：模板中 {{p table_tag }}、{{p result }} 所在段落避免使用正文首行缩进样式。")
 
 
 if __name__ == "__main__":
