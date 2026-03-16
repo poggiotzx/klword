@@ -1,10 +1,10 @@
 # klword
 
-[![PyPI
-version](https://img.shields.io/pypi/v/klword.svg)](https://pypi.org/project/klword/)
-[![Python
-versions](https://img.shields.io/pypi/pyversions/klword.svg)](https://pypi.org/project/klword/)
-[![License](https://img.shields.io/pypi/l/klword.svg)](LICENSE)
+# klword
+
+[![PyPI](https://img.shields.io/pypi/v/klword)](https://pypi.org/project/klword/)
+[![Python](https://img.shields.io/pypi/pyversions/klword)](https://pypi.org/project/klword/)
+[![License](https://img.shields.io/github/license/poggiotzx/klword)](LICENSE)
 
 A lightweight **Word report generation library** built on top of
 **docxtpl** and **python-docx**.
