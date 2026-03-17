@@ -26,7 +26,7 @@ def main() -> None:
     """执行示例报告生成流程。"""
     project_root = Path(__file__).resolve().parents[1]
     template_path = project_root / "src" / "klword" / "templates" / "default_template.docx"
-    image_path = project_root / "tests" / "assets" / "test_image.png"
+    image_path = project_root / "src" / "klword" / "templates" / "klword.png"
     output_dir = project_root / "output"
     output_dir.mkdir(exist_ok=True)
 
