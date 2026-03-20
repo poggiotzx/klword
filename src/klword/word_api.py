@@ -924,7 +924,8 @@ class WordAPI:
         document.save(docx_path)
         return docx_path
 
-
+# if __name__ == '__main__':
+#     pass
 __all__ = [
     "TextValue",
     "PartConfig",

@@ -4,13 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "klword"
-version = "1.0.1"
+version = "1.0.2"
 description = "Lightweight Word report generation library based on python-docx"
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
 authors = [
-  { name = "Craig Cooper", email = "2322806855@qq.com" }
+  { name = "poggio", email = "2322806855@qq.com" }
 ]
 keywords = ["word", "docx", "report", "automation", "python-docx"]
 classifiers = [
